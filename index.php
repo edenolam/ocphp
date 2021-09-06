@@ -1,5 +1,8 @@
 <?php
-$br = "<br/>";
+function br()
+{
+    echo "<br>";
+}
 //$age_du_visiteur = 17;
 //echo 'le visiteur a ' . $age_du_visiteur . ' ans';
 //
@@ -73,10 +76,24 @@ $coordonnees = array (
     'nom' => 'Dupont',
     'adresse' => '3 Rue du Paradis',
     'ville' => 'Marseille');
+$coordonneesUnit = array ('François', 'Dupont', '3 Rue du Paradis', 'Marseille');
+// cle
+if (array_key_exists('nom', $coordonnees)){
+    echo 'La clé "nom" se trouve dans les coordonnées !';
+}
+br();
+// valeur
+if (in_array('François', $coordonnees)){
+    echo 'La valeur "François" se trouve dans les coordonnées !';
+}
+br();
+$position = array_search('François', $coordonneesUnit);
+    echo 'La valeur "François" se trouve en position ' . $position;
 
-echo '<pre>';
-print_r($coordonnees);
-echo '</pre>';
+br();
+//echo '<pre>';
+//print_r($coordonnees);
+//echo '</pre>';
 
 //    echo '<table><tbody>';
 //foreach ($coordonnees as $key => $value){
