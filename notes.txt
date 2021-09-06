@@ -1,0 +1,60 @@
+Une variable est une petite information qui reste stockée en mémoire le temps de la génération de la page PHP. Elle a un nom et une valeur.
+
+Il existe plusieurs types de variables qui permettent de stocker différents types d'informations : du texte ( string  ), des nombres entiers ( int  ), des nombres décimaux (float), des booléens pour stocker vrai ou faux ( bool  ), etc.
+
+En PHP, un nom de variable commence par le symbole dollar : $age  par exemple.
+
+La valeur d'une variable peut être affichée avec l'instruction echo  .
+
+Il est possible de faire des calculs mathématiques entre plusieurs variables : addition, soustraction, multiplication…
+
+switch**********************
+
+Quand doit-on choisir if  , et quand doit-on choisir switch ?
+
+C'est surtout un problème de présentation et de clarté. Pour une condition simple et courte,
+on utilise le if  , et quand on a une série de conditions à analyser,
+on préfère utiliser switch  pour rendre le code plus clair.
+
+Les conditions permettent à PHP de prendre des décisions en fonction de la valeur des variables.
+
+La forme de condition la plus courante est if  ...  elseif  ... else  qui signifie « si »… « sinon si »… « sinon ».
+
+On peut combiner des conditions avec les mots-clés AND  (« et ») et OR  (« ou »).
+
+Si une condition comporte de nombreux elseif  , il peut être plus pratique d'utiliser switch  , une autre forme de condition.
+
+Les ternaires sont des conditions condensées qui font un test sur une variable,
+et en fonction des résultats de ce test donnent une valeur à une autre variable.
+Elles sont cependant plus rarement utilisées.
+
+Comment savoir lequel prendre quand je dois choisir entre un while  et un for ?
+
+« Est-ce que je sais d'avance combien de fois je veux que mes instructions soient répétées ? ».
+Si la réponse est oui, alors la boucle for  est tout indiquée. Sinon, alors il vaut mieux utiliser la boucle while
+
+Les boucles demandent à PHP de répéter des instructions plusieurs fois.
+
+Les deux principaux types de boucles sont :
+
+while : : à utiliser de préférence lorsqu'on ne sait pas par avance combien de fois la boucle doit être répétée ;
+
+for  : à utiliser lorsqu'on veut répéter des instructions un nombre précis de fois.
+
+L'incrémentation est une technique qui consiste à ajouter 1 à la valeur d'une variable. La décrémentation retire au contraire 1 à cette variable. On trouve souvent des incrémentations au sein de boucles for  .
+
+arrays *******************************
+
+Quand utiliser un array numéroté et quand utiliser un array associatif ?
+
+Comme vous l'avez vu dans mes exemples, ils ne servent pas à stocker la même chose…
+
+Les arrays numérotés permettent de stocker une série d'éléments du même type, comme des prénoms. Chaque élément du tableau contiendra alors un prénom.
+
+Les arrays associatifs permettent de découper une donnée en plusieurs sous-éléments. Par exemple, une adresse peut être découpée en nom, prénom, nom de rue, ville…
+
+array_key_exists : pour vérifier si une clé existe dans l'array ;
+
+in_array : pour vérifier si une valeur existe dans l'array ;
+
+array_search : pour récupérer la clé d'une valeur dans l'array.
